@@ -6,7 +6,6 @@ import com.enderio.endergy.common.lang.EndergyCommonComponents;
 import com.enderio.enderio.api.EnderIOAPI;
 import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.enderio.api.conduits.ConduitApi;
-import com.enderio.enderio.content.conduits.ConduitBlockItem;
 import com.enderio.enderio.content.paint.block.PaintedBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -22,7 +21,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 import java.util.function.Predicate;
 
 public class EndergyCreativeTabs {
