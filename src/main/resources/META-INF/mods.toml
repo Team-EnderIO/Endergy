@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+issueTrackerURL="https://github.com/Team-EnderIO/Endergy/issues"
+license="CC0"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="Ender IO - Endergy"
+authors="CrazyPants, tterrag, HenryLoenwind, MatthiasM, CyanideX, EpicSquid, Rover656, HypherionSA, liliandev, Ferri_Arnus, dphaldes"
+description="Endergy expands on the Ender IO experience with more of the balanced* content you love! If you want higher powered conduits, or faster machines, then this is the mod for you!"
+displayURL="https://enderio.com/"
+logoFile="logo.png"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version}"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version}"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="enderio"
+mandatory=true
+versionRange="${enderio_version}"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="jei"
+mandatory=false
+versionRange="${jei_version}"
+side="BOTH"

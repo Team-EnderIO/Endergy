@@ -1,0 +1,22 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 10000,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:dusts/grains_of_infinity"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:ingots/gold"
+      }
+    }
+  ],
+  "result": {
+    "item": "enderio_endergy:crystalline_alloy_ingot"
+  }
+}

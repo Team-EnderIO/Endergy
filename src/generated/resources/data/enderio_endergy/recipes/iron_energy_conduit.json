@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "enderio:conduit_binder"
+    },
+    "G": {
+      "tag": "forge:dusts/grains_of_infinity"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "IGI",
+    "BBB"
+  ],
+  "result": {
+    "count": 8,
+    "item": "enderio_endergy:iron_energy"
+  },
+  "show_notification": true
+}

@@ -1,8 +1,0 @@
-{
-  "type": "enderio:energy",
-  "description": {
-    "translate": "conduit.enderio_endergy.iron_energy"
-  },
-  "texture": "enderio_endergy:block/conduit/iron_energy",
-  "transfer_rate": 80
-}

@@ -1,12 +1,12 @@
 package com.enderio.endergy.common.lang;
 
-import com.enderio.enderio.EnderIO;
+import com.enderio.EnderIO;
 import net.minecraft.Util;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 
 public class EndergyCommonComponents {
-    public static final MutableComponent CREATIVE_TAB_TITLE = create("itemGroup", "endergy");
+    public static final String CREATIVE_TAB_TITLE = Util.makeDescriptionId("itemGroup", EnderIO.loc("endergy"));
 
     public static final MutableComponent TOTEMIC_CAPACITOR_TOOLTIP = create("tooltip", "totemic_capacitor/hint");
 
@@ -23,6 +23,6 @@ public class EndergyCommonComponents {
     }
 
     private static MutableComponent create(String type, String path) {
-        return Component.translatable(Util.makeDescriptionId(type, EnderIO.rl(path)));
+        return Component.translatable(Util.makeDescriptionId(type, EnderIO.loc(path)));
     }
 }

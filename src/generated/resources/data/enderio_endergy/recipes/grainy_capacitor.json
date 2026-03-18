@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "forge:dusts/grains_of_infinity"
+    },
+    "N": {
+      "tag": "forge:nuggets/iron"
+    }
+  },
+  "pattern": [
+    "G",
+    "N",
+    "N"
+  ],
+  "result": {
+    "item": "enderio_endergy:grainy_capacitor"
+  },
+  "show_notification": true
+}

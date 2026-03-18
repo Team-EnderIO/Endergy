@@ -1,15 +1,15 @@
 [versions]
-enderio = { strictly = "[8.2.0-alpha,)", prefer = "8.2.0-alpha" }
-jeiVersion = "19.25.0.321"
+enderio = "6.2.18-beta-all"
+jeiVersion = "15.20.0.129"
 
 [libraries]
 endercore = { group = "com.enderio", name = "endercore", version.ref = "enderio" }
 enderio = { group = "com.enderio", name = "enderio", version.ref = "enderio" }
-jeiCommonApi = { group = "mezz.jei", name = "jei-1.21.1-common-api", version.ref = "jeiVersion" }
-jeiNeoforgeApi = { group = "mezz.jei", name = "jei-1.21.1-neoforge-api", version.ref = "jeiVersion" }
-jeiCommon = { group = "mezz.jei", name = "jei-1.21.1-common", version.ref = "jeiVersion" }
-jeiNeoforge = { group = "mezz.jei", name = "jei-1.21.1-neoforge", version.ref = "jeiVersion" }
+jeiCommonApi = { group = "mezz.jei", name = "jei-1.20.1-common-api", version.ref = "jeiVersion" }
+jeiForgeApi  = { group = "mezz.jei", name = "jei-1.20.1-forge-api",  version.ref = "jeiVersion" }
+jeiCommon    = { group = "mezz.jei", name = "jei-1.20.1-common",     version.ref = "jeiVersion" }
+jeiForge     = { group = "mezz.jei", name = "jei-1.20.1-forge",      version.ref = "jeiVersion" }
 
 [bundles]
-jeiApi = ["jeiCommonApi", "jeiNeoforgeApi"]
-jei = ["jeiCommon", "jeiNeoforge"]
+jeiApi = ["jeiCommonApi", "jeiForgeApi"]
+jei    = ["jeiCommon", "jeiForge"]

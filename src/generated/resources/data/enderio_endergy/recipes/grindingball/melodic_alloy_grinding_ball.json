@@ -1,0 +1,8 @@
+{
+  "type": "enderio:grinding_ball",
+  "chance": 1.45,
+  "durability": 80000,
+  "grinding": 2.0,
+  "item": "enderio_endergy:melodic_alloy_grinding_ball",
+  "power": 1.55
+}

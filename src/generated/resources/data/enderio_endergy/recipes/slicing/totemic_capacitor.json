@@ -1,0 +1,27 @@
+{
+  "type": "enderio:slicing",
+  "energy": 20000,
+  "inputs": [
+    {
+      "tag": "forge:ingots/soularium"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "tag": "forge:ingots/soularium"
+    },
+    {
+      "tag": "forge:dusts/grains_of_infinity"
+    },
+    {
+      "item": "enderio_endergy:crystalline_capacitor"
+    },
+    {
+      "tag": "forge:dusts/grains_of_infinity"
+    }
+  ],
+  "output": {
+    "item": "enderio_endergy:totemic_capacitor"
+  }
+}

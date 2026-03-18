@@ -1,0 +1,28 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 5000,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:gravel"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:clay_ball"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:cobblestone"
+      }
+    }
+  ],
+  "result": {
+    "item": "enderio_endergy:crude_steel_ingot"
+  }
+}

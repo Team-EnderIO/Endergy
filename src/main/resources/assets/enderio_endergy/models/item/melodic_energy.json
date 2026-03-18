@@ -1,0 +1,6 @@
+{
+  "loader": "enderio:conduit",
+  "textures": {
+    "texture": "enderio_endergy:block/conduit/melodic_energy"
+  }
+}

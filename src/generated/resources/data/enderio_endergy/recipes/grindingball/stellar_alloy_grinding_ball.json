@@ -1,0 +1,8 @@
+{
+  "type": "enderio:grinding_ball",
+  "chance": 2.25,
+  "durability": 160000,
+  "grinding": 2.3,
+  "item": "enderio_endergy:stellar_alloy_grinding_ball",
+  "power": 2.2
+}

@@ -1,0 +1,22 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 20000,
+  "experience": 0.3,
+  "inputs": [
+    {
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:popped_chorus_fruit"
+      }
+    },
+    {
+      "count": 1,
+      "ingredient": {
+        "tag": "forge:ingots/end_steel"
+      }
+    }
+  ],
+  "result": {
+    "item": "enderio_endergy:melodic_alloy_ingot"
+  }
+}
