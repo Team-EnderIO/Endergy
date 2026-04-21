@@ -12,8 +12,8 @@
       "item": "enderio_endergy:melodic_alloy_ingot"
     },
     {
-      "count": 4,
-      "item": "minecraft:clay_ball"
+      "count": 1,
+      "tag": "c:dusts/grains_of_the_end"
     }
   ],
   "output": {

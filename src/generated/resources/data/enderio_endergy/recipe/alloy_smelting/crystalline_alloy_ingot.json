@@ -9,7 +9,11 @@
     },
     {
       "count": 1,
-      "tag": "c:ingots/gold"
+      "item": "enderio_endergy:vivid_alloy_ingot"
+    },
+    {
+      "count": 1,
+      "tag": "c:gems/prismarine"
     }
   ],
   "output": {

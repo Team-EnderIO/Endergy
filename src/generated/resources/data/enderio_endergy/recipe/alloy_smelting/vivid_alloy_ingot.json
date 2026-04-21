@@ -1,23 +1,23 @@
 {
   "type": "enderio:alloy_smelting",
-  "energy": 20000,
+  "energy": 10000,
   "experience": 0.3,
   "inputs": [
     {
       "count": 1,
-      "item": "minecraft:popped_chorus_fruit"
+      "tag": "c:dusts/lapis"
     },
     {
       "count": 1,
-      "tag": "c:ingots/end_steel"
+      "tag": "c:ingots/gold"
     },
     {
       "count": 1,
-      "tag": "c:gems/amethyst"
+      "tag": "c:dusts/grains_of_vibrancy"
     }
   ],
   "output": {
     "count": 1,
-    "id": "enderio_endergy:melodic_alloy_ingot"
+    "id": "enderio_endergy:vivid_alloy_ingot"
   }
 }

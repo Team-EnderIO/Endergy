@@ -40,16 +40,16 @@ public class EndergyItems {
     // endregion
 
     public static final DeferredItem<CapacitorItem> GRAINY_CAPACITOR = ITEMS.registerItem("grainy_capacitor",
-        CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(1)));
+        CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(0.5f)));
 
     public static final DeferredItem<CapacitorItem> VIVID_CAPACITOR = ITEMS.registerItem("vivid_capacitor",
-        CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(3)));
-
-    public static final DeferredItem<CapacitorItem> CRYSTALLINE_CAPACITOR = ITEMS.registerItem("crystalline_capacitor",
         CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(3.5f)));
 
-    public static final DeferredItem<CapacitorItem> MELODIC_CAPACITOR = ITEMS.registerItem("melodic_capacitor",
+    public static final DeferredItem<CapacitorItem> CRYSTALLINE_CAPACITOR = ITEMS.registerItem("crystalline_capacitor",
         CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(4)));
+
+    public static final DeferredItem<CapacitorItem> MELODIC_CAPACITOR = ITEMS.registerItem("melodic_capacitor",
+        CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(4.5f)));
 
     public static final DeferredItem<CapacitorItem> STELLAR_CAPACITOR = ITEMS.registerItem("stellar_capacitor",
         CapacitorItem::new, new Item.Properties().component(EIODataComponents.CAPACITOR_DATA, CapacitorData.simple(5)));

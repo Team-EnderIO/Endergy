@@ -55,11 +55,11 @@ public class MaterialRecipeProvider extends SubRecipeProvider {
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EndergyItems.VIVID_CAPACITOR.get())
                 .pattern(" I ")
-                .pattern("CGC")
+                .pattern("CLC")
                 .pattern(" I ")
                 .define('I', EndergyItems.VIVID_ALLOY_INGOT)
-                .define('C', EIOItems.DOUBLE_LAYER_CAPACITOR)
-                .define('G', Items.GLOWSTONE)
+                .define('C', EIOItems.OCTADIC_CAPACITOR)
+                .define('L', Items.LAPIS_BLOCK)
                 .unlockedBy("has_ingredient",
                         InventoryChangeTrigger.TriggerInstance.hasItems(EndergyItems.VIVID_ALLOY_INGOT.get()))
                 .save(recipeOutput);
