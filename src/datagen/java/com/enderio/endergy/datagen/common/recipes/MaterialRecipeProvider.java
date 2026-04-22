@@ -53,6 +53,17 @@ public class MaterialRecipeProvider extends SubRecipeProvider {
                         InventoryChangeTrigger.TriggerInstance.hasItems(EIOItems.GRAINS_OF_INFINITY.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EIOItems.BASIC_CAPACITOR.get())
+                .pattern(" N ")
+                .pattern("GCG")
+                .pattern(" N ")
+                .define('N', Tags.Items.NUGGETS_GOLD)
+                .define('G', EndergyItems.GRAINY_CAPACITOR)
+                .define('C', Tags.Items.INGOTS_COPPER)
+                .unlockedBy("has_ingredient",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(EndergyItems.GRAINY_CAPACITOR.get()))
+                .save(recipeOutput, EnderIOEndergy.rl(EIOItems.BASIC_CAPACITOR.getId().getPath()));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EndergyItems.VIVID_CAPACITOR.get())
                 .pattern(" I ")
                 .pattern("CLC")
