@@ -1,23 +1,22 @@
 {
   "type": "enderio:alloy_smelting",
-  "energy": 10000,
+  "energy": 5000,
   "experience": 0.3,
   "inputs": [
     {
       "count": 1,
-      "tag": "c:dusts/lapis"
+      "ingredient": "#c:dusts/lapis"
     },
     {
       "count": 1,
-      "tag": "c:ingots/gold"
+      "ingredient": "#c:ingots/gold"
     },
     {
       "count": 1,
-      "tag": "c:dusts/grains_of_vibrancy"
+      "ingredient": "#c:dusts/grains_of_vibrancy"
     }
   ],
   "output": {
-    "count": 1,
     "id": "enderio_endergy:vivid_alloy_ingot"
   }
 }

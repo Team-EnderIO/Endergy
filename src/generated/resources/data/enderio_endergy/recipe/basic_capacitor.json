@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "tag": "c:ingots/copper"
-    },
-    "G": {
-      "item": "enderio_endergy:grainy_capacitor"
-    },
-    "N": {
-      "tag": "c:nuggets/gold"
-    }
+    "C": "#c:ingots/copper",
+    "G": "enderio_endergy:grainy_capacitor",
+    "N": "#c:nuggets/gold"
   },
   "pattern": [
     " N ",
@@ -18,7 +12,6 @@
     " N "
   ],
   "result": {
-    "count": 1,
     "id": "enderio:basic_capacitor"
   }
 }
