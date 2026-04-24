@@ -47,30 +47,31 @@ public class AlloyRecipeProvider extends SubRecipeProvider {
                     SizedIngredient.of(Tags.Items.COBBLESTONES_NORMAL, 1)),
                 5000, 0.3f, recipeOutput);
 
+        build(new ItemStack(EndergyItems.VIVID_ALLOY_INGOT.get()),
+                List.of(SizedIngredient.of(EIOTags.Items.DUSTS_LAPIS, 1),
+                        SizedIngredient.of(Tags.Items.INGOTS_GOLD, 1),
+                        SizedIngredient.of(EIOTags.Items.DUSTS_GRAINS_OF_VIBRANCY, 1)),
+                10000, 0.3f, recipeOutput);
+
         build(new ItemStack(EndergyItems.CRYSTALLINE_ALLOY_INGOT.get()),
                 List.of(SizedIngredient.of(EIOTags.Items.DUSTS_GRAINS_OF_PIZEALLITY, 1),
-                    SizedIngredient.of(Tags.Items.INGOTS_GOLD, 1)),
+                    SizedIngredient.of(EndergyItems.VIVID_ALLOY_INGOT, 1),
+                    SizedIngredient.of(Tags.Items.GEMS_PRISMARINE, 1)),
                 10000, 0.3f, recipeOutput);
 
         build(new ItemStack(EndergyItems.MELODIC_ALLOY_INGOT.get()),
                 List.of(SizedIngredient.of(Items.POPPED_CHORUS_FRUIT, 1),
-                    SizedIngredient.of(EIOTags.Items.INGOTS_END_STEEL, 1)),
+                    SizedIngredient.of(EIOTags.Items.INGOTS_END_STEEL, 1),
+                    SizedIngredient.of(Tags.Items.GEMS_AMETHYST, 1)),
                 20000, 0.3f, recipeOutput);
 
         build(new ItemStack(EndergyItems.STELLAR_ALLOY_INGOT.get(), 2),
                 List.of(SizedIngredient.of(Items.NETHER_STAR, 1),
                     SizedIngredient.of(EndergyItems.MELODIC_ALLOY_INGOT, 1),
-                    SizedIngredient.of(Items.CLAY_BALL, 4)),
+                    SizedIngredient.of(EIOTags.Items.DUSTS_GRAINS_OF_THE_END, 1)),
                 20000, 0.3f, recipeOutput);
 
         // TODO: No recipe for crystalline pink slime or energetic silver?
-
-        // TODO: How to replace silver-based alloys.
-//        build(new ItemStack(EndergyItems.VIVID_ALLOY_INGOT.get()),
-//            List.of(SizedIngredient.of(Tags.Items.ENDER_PEARLS, 1),
-//                SizedIngredient.of(EndergyItems.ENERGETIC_SILVER_INGOT, 1)),
-//            10000, 0.3f, recipeOutput);
-
 
         // endregion
     }
