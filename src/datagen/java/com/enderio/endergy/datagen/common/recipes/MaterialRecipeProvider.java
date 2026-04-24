@@ -57,13 +57,24 @@ public class MaterialRecipeProvider extends SubRecipeProvider {
                         InventoryChangeTrigger.TriggerInstance.hasItems(EIOItems.GRAINS_OF_INFINITY.get()))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.MISC, EIOItems.BASIC_CAPACITOR.get())
+                .pattern(" N ")
+                .pattern("GCG")
+                .pattern(" N ")
+                .define('N', Tags.Items.NUGGETS_GOLD)
+                .define('G', EndergyItems.GRAINY_CAPACITOR)
+                .define('C', Tags.Items.INGOTS_COPPER)
+                .unlockedBy("has_ingredient",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(EndergyItems.GRAINY_CAPACITOR.get()))
+                .save(recipeOutput, EnderIOEndergy.id(EIOItems.BASIC_CAPACITOR.getId().getPath()).toString());
+
         ShapedRecipeBuilder.shaped(items, RecipeCategory.MISC, EndergyItems.VIVID_CAPACITOR.get())
                 .pattern(" I ")
-                .pattern("CGC")
+                .pattern("CLC")
                 .pattern(" I ")
                 .define('I', EndergyItems.VIVID_ALLOY_INGOT)
-                .define('C', EIOItems.DOUBLE_LAYER_CAPACITOR)
-                .define('G', Items.GLOWSTONE)
+                .define('C', EIOItems.OCTADIC_CAPACITOR)
+                .define('L', Items.LAPIS_BLOCK)
                 .unlockedBy("has_ingredient",
                         InventoryChangeTrigger.TriggerInstance.hasItems(EndergyItems.VIVID_ALLOY_INGOT.get()))
                 .save(recipeOutput);

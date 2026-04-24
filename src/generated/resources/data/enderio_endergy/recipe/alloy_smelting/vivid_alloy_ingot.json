@@ -5,18 +5,19 @@
   "inputs": [
     {
       "count": 1,
-      "ingredient": "#c:dusts/grains_of_pizeallity"
+      "tag": "c:dusts/lapis"
     },
     {
       "count": 1,
-      "ingredient": "#c:ingots/gold"
+      "tag": "c:ingots/gold"
     },
     {
       "count": 1,
-      "ingredient": "#c:gems/prismarine"
+      "tag": "c:dusts/grains_of_vibrancy"
     }
   ],
   "output": {
-    "id": "enderio_endergy:crystalline_alloy_ingot"
+    "count": 1,
+    "id": "enderio_endergy:vivid_alloy_ingot"
   }
 }

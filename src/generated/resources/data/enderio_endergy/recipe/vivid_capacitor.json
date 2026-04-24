@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": "enderio:double_layer_capacitor",
-    "G": "minecraft:glowstone",
-    "I": "enderio_endergy:vivid_alloy_ingot"
+    "C": "enderio:octadic_capacitor",
+    "I": "enderio_endergy:vivid_alloy_ingot",
+    "L": "minecraft:lapis_block"
   },
   "pattern": [
     " I ",
-    "CGC",
+    "CLC",
     " I "
   ],
   "result": {
