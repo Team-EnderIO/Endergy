@@ -39,10 +39,13 @@ public class TotemicCapacitorItem extends CapacitorItem implements ICapacitorExt
     }
 
     @Override
-    public @Nullable CapacitorData getCapacitorData(ItemStack capacitorStack, HolderLookup.Provider registries) {
-        var enchantmentRegistry = registries.lookupOrThrow(Registries.ENCHANTMENT);
+    public @Nullable CapacitorData getCapacitorData(ItemStack capacitorStack, @Nullable HolderLookup.Provider registries) {
+        int efficiencyLevel = 0;
+        if (registries != null) {
+            var enchantmentRegistry = registries.lookupOrThrow(Registries.ENCHANTMENT);
+            efficiencyLevel = capacitorStack.getEnchantmentLevel(enchantmentRegistry.getOrThrow(Enchantments.EFFICIENCY));
+        }
 
-        var efficiencyLevel = capacitorStack.getEnchantmentLevel(enchantmentRegistry.getOrThrow(Enchantments.EFFICIENCY));
         return DATA_CACHE.computeIfAbsent(efficiencyLevel, l -> new CapacitorData(3.5f + l * 0.5f, Map.of()));
     }
 
