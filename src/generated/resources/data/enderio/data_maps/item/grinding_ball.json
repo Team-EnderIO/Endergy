@@ -1,0 +1,34 @@
+{
+  "values": {
+    "enderio_endergy:crude_steel_grinding_ball": {
+      "BonusMultiplier": 1.25,
+      "Durability": 24000,
+      "OutputMultiplier": 1.2,
+      "PowerUse": 0.85
+    },
+    "enderio_endergy:crystalline_alloy_grinding_ball": {
+      "BonusMultiplier": 1.4,
+      "Durability": 80000,
+      "OutputMultiplier": 1.8,
+      "PowerUse": 1.45
+    },
+    "enderio_endergy:melodic_alloy_grinding_ball": {
+      "BonusMultiplier": 1.45,
+      "Durability": 80000,
+      "OutputMultiplier": 2.0,
+      "PowerUse": 1.55
+    },
+    "enderio_endergy:stellar_alloy_grinding_ball": {
+      "BonusMultiplier": 2.25,
+      "Durability": 160000,
+      "OutputMultiplier": 2.3,
+      "PowerUse": 2.2
+    },
+    "enderio_endergy:vivid_alloy_grinding_ball": {
+      "BonusMultiplier": 1.35,
+      "Durability": 80000,
+      "OutputMultiplier": 1.75,
+      "PowerUse": 1.35
+    }
+  }
+}
