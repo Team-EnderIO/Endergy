@@ -4,6 +4,7 @@ import com.enderio.endergy.datagen.client.EndergyBlockStateProvider;
 import com.enderio.endergy.datagen.client.EndergyItemModelProvider;
 import com.enderio.endergy.datagen.client.EndergyLanguageProvider;
 import com.enderio.endergy.common.EnderIOEndergy;
+import com.enderio.endergy.datagen.common.data_maps.GrindingBallDataMapProvider;
 import com.enderio.endergy.datagen.common.recipes.EndergyRecipeProvider;
 import com.enderio.endergy.datagen.common.datapack_registries.ConduitsBootstrap;
 import com.enderio.enderio.EnderIO;
@@ -37,6 +38,8 @@ public class EnderIOEndergyDataGen {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         generator.addProvider(event.includeServer(), new EndergyRecipeProvider(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeServer(), new GrindingBallDataMapProvider(packOutput, lookupProvider));
 
         generator.addProvider(event.includeClient(), new EndergyLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new EndergyBlockStateProvider(packOutput, existingFileHelper));

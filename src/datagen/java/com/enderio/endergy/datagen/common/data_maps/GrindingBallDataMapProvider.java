@@ -15,7 +15,7 @@ public class GrindingBallDataMapProvider extends DataMapProvider {
     }
 
     @Override
-    protected void gather() {
+    protected void gather(HolderLookup.Provider provider) {
         builder(GrindingBallData.DATA_MAP_TYPE)
             .add(EndergyItems.CRUDE_STEEL_BALL, new GrindingBallData(1.2F, 1.25F, 0.85F, 24000), false)
             .add(EndergyItems.CRYSTALLINE_ALLOY_BALL, new GrindingBallData(1.8F, 1.4F, 1.45F, 80000), false)
