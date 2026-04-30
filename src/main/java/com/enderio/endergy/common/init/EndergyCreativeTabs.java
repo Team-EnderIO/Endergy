@@ -1,6 +1,5 @@
 package com.enderio.endergy.common.init;
 
-import com.enderio.core.common.item.CreativeTabVariants;
 import com.enderio.core.common.item.ICustomCreativeTabEntries;
 import com.enderio.endergy.common.EnderIOEndergy;
 import com.enderio.endergy.common.lang.EndergyCommonComponents;
@@ -76,11 +75,6 @@ public class EndergyCreativeTabs {
                 customCreativeTabEntries.addAdditionalCreativeTabEntries(properties, output);
             } else {
                 output.accept(item);
-
-                // TODO: Remove this old interface
-                if (item instanceof CreativeTabVariants variants) {
-                    variants.addAllVariants(output);
-                }
             }
         }
     }
