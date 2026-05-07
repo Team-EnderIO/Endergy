@@ -29,19 +29,19 @@ public class ConduitsBootstrap {
         register(context, EndergyConduits.MELODIC_ENERGY, (desc) -> new EnergyConduit(EnderIOEndergy.rl("block/conduit/melodic_energy"), desc, 768_000));
         register(context, EndergyConduits.STELLAR_ENERGY, (desc) -> new EnergyConduit(EnderIOEndergy.rl("block/conduit/stellar_energy"), desc, Integer.MAX_VALUE));
 
-        register(context, EndergyConduits.CRYSTALLINE_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), 128_000, true, true));
-        register(context, EndergyConduits.MELODIC_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), 512_000, true, true));
-        register(context, EndergyConduits.STELLAR_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), Integer.MAX_VALUE, true, true));
-
-        register(context, EndergyConduits.CRYSTALLINE_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), 128, 10));
-        register(context, EndergyConduits.MELODIC_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), 256, 5));
-        register(context, EndergyConduits.STELLAR_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
-                Optional.of(EndergyCreativeTabs.MAIN), 512, 1));
+//        register(context, EndergyConduits.CRYSTALLINE_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 128_000, true, true));
+//        register(context, EndergyConduits.MELODIC_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 512_000, true, true));
+//        register(context, EndergyConduits.STELLAR_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), Integer.MAX_VALUE, true, true));
+//
+//        register(context, EndergyConduits.CRYSTALLINE_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 128, 10));
+//        register(context, EndergyConduits.MELODIC_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 256, 5));
+//        register(context, EndergyConduits.STELLAR_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 512, 1));
     }
 
     private static void register(BootstrapContext<Conduit<?, ?>> context, ResourceKey<Conduit<?, ?>> key, Function<Component, Conduit<?, ?>> factory) {
