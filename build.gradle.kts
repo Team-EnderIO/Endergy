@@ -107,7 +107,7 @@ neoForge {
     }
 
     mods {
-        create("endergy") {
+        create(mod_id) {
             sourceSet(sourceSets["datagen"])
             sourceSet(sourceSets["main"])
         }
@@ -136,13 +136,7 @@ neoForge {
         configureEach {
             systemProperty("forge.logging.markers", "REGISTRIES")
             logLevel = org.slf4j.event.Level.DEBUG
-            loadedMods.add(neoForge.mods["endergy"])
-        }
-    }
-
-    mods {
-        create(mod_id) {
-            sourceSet(sourceSets["main"])
+            loadedMods.add(neoForge.mods[mod_id])
         }
     }
 }

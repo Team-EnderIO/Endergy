@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "enderio_endergy:block/vivid_alloy_block"
+  }
+}
