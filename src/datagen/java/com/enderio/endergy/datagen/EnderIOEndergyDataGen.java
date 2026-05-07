@@ -7,7 +7,6 @@ import com.enderio.endergy.common.EnderIOEndergy;
 import com.enderio.endergy.datagen.common.data_maps.GrindingBallDataMapProvider;
 import com.enderio.endergy.datagen.common.recipes.EndergyRecipeProvider;
 import com.enderio.endergy.datagen.common.datapack_registries.ConduitsBootstrap;
-import com.enderio.enderio.EnderIO;
 import com.enderio.enderio.api.EnderIORegistries;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
