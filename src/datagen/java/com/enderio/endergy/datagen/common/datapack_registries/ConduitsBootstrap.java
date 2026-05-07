@@ -5,6 +5,10 @@ import com.enderio.endergy.common.EndergyConduits;
 import com.enderio.enderio.api.EnderIORegistries;
 import com.enderio.enderio.api.conduits.Conduit;
 import com.enderio.enderio.content.conduits.type.energy.EnergyConduit;
+import com.enderio.enderio.EnderIO;
+import com.enderio.enderio.content.conduits.type.fluid.FluidConduit;
+import com.enderio.enderio.content.conduits.type.item.ItemConduit;
+import com.enderio.enderio.init.EIOConduits;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -22,6 +26,20 @@ public class ConduitsBootstrap {
         register(context, EndergyConduits.CRYSTALLINE_ENERGY, (desc) -> new EnergyConduit(EnderIOEndergy.id("block/conduit/crystalline_energy"), desc, 384_000));
         register(context, EndergyConduits.MELODIC_ENERGY, (desc) -> new EnergyConduit(EnderIOEndergy.id("block/conduit/melodic_energy"), desc, 768_000));
         register(context, EndergyConduits.STELLAR_ENERGY, (desc) -> new EnergyConduit(EnderIOEndergy.id("block/conduit/stellar_energy"), desc, Integer.MAX_VALUE));
+
+//        register(context, EndergyConduits.CRYSTALLINE_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 128_000, true, true));
+//        register(context, EndergyConduits.MELODIC_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 512_000, true, true));
+//        register(context, EndergyConduits.STELLAR_FLUID, (desc) -> new FluidConduit(EnderIO.rl("block/conduit/ender_fluid"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), Integer.MAX_VALUE, true, true));
+//
+//        register(context, EndergyConduits.CRYSTALLINE_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 128, 10));
+//        register(context, EndergyConduits.MELODIC_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 256, 5));
+//        register(context, EndergyConduits.STELLAR_ITEM, (desc) -> new ItemConduit(EnderIO.rl("block/conduit/item"), desc,
+//                Optional.of(EndergyCreativeTabs.MAIN), 512, 1));
     }
 
     private static void register(BootstrapContext<Conduit<?, ?>> context, ResourceKey<Conduit<?, ?>> key, Function<Component, Conduit<?, ?>> factory) {

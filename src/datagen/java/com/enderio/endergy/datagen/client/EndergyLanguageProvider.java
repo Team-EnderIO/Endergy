@@ -29,6 +29,7 @@ public class EndergyLanguageProvider extends LanguageProvider {
     }
 
     private void addConduitDescriptions() {
+        // Energy
         add(EndergyConduits.CRUDE_ENERGY, "Crude Energy Conduit");
         add(EndergyConduits.COPPER_ENERGY, "Copper Energy Conduit");
         add(EndergyConduits.IRON_ENERGY, "Iron Energy Conduit");
@@ -36,6 +37,16 @@ public class EndergyLanguageProvider extends LanguageProvider {
         add(EndergyConduits.CRYSTALLINE_ENERGY, "Crystalline Energy Conduit");
         add(EndergyConduits.MELODIC_ENERGY, "Melodic Energy Conduit");
         add(EndergyConduits.STELLAR_ENERGY, "Stellar Energy Conduit");
+
+        // Fluids
+        add(EndergyConduits.CRYSTALLINE_FLUID, "Crystalline Fluid Conduit");
+        add(EndergyConduits.MELODIC_FLUID, "Melodic Fluid Conduit");
+        add(EndergyConduits.STELLAR_FLUID, "Stellar Fluid Conduit");
+
+        // Items
+        add(EndergyConduits.CRYSTALLINE_ITEM, "Crystalline Item Conduit");
+        add(EndergyConduits.MELODIC_ITEM, "Melodic Item Conduit");
+        add(EndergyConduits.STELLAR_ITEM, "Stellar Item Conduit");
     }
     
     private void addItems() {
