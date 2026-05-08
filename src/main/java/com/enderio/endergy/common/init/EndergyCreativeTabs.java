@@ -73,7 +73,7 @@ public class EndergyCreativeTabs {
         for (var conduitClass : conduitClassTypes) {
             var matchingConduitTypes = conduitTypes.stream()
                     .filter(e -> e.value().getClass() == conduitClass)
-                    .filter(e -> e.getKey().location().getNamespace().equals(EnderIOEndergy.MOD_ID))
+                    .filter(e -> e.getRegisteredName().startsWith(EnderIOEndergy.MOD_ID + ":"))
                     .sorted(ConduitApi.INSTANCE::compareConduits)
                     .toList();
 
